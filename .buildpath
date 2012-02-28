@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildpath>
+	<buildpathentry kind="src" path="tests"/>
+	<buildpathentry kind="con" path="org.eclipse.php.core.LANGUAGE"/>
+	<buildpathentry kind="src" path="library/CMS/Content/Item"/>
+	<buildpathentry kind="con" path="org.eclipse.dltk.USER_LIBRARY/zend"/>
+	<buildpathentry kind="src" path="application"/>
+	<buildpathentry kind="src" path="public"/>
+</buildpath>

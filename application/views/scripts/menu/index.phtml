@@ -1,0 +1,13 @@
+<h2>Current Menus</h2>
+<?php if ($this->menus != null) { ?>
+<table class='spreadsheet'>
+	<tr>
+		<th>Links</th>
+		<th>Menu Name</th>
+	</tr>
+	<?php echo $this->partialLoop('partials/_menu-row.phtml', $this->menus); ?>
+</table>
+<?php } else { ?>
+<p>You don't have any menus yet.</p>
+<?php } ?>
+<p><a href='/menu/create'>Create a new menu</a></p>

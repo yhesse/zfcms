@@ -1,0 +1,64 @@
+<?php
+echo '<?xml version="1.0" encoding="UTF-8" ?>';
+echo $this->doctype();
+$this->loadSkin($this->skin);
+?>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <?php
+    echo $this->headTitle();
+    echo $this->headScript();
+    echo $this->headLink();
+    ?>
+</head>
+
+<body>
+<div id="pageWrapper">
+<div id="header">
+<h1>Zend Framework CMS</h1>
+</div>
+<div id="nav">
+            <?php
+            echo $this->layout()->nav;
+            ?>&nbsp;
+        </div>
+<div id="sidebar">
+<div id='searchForm'>
+	<h2><?php echo 'Search Site';?></h2>
+
+</div>
+<div id="feeds">
+	
+</div>
+
+<div id="subNav">
+            <?php
+            echo $this->layout()->subNav;
+            ?>&nbsp;
+        </div>
+<div id="adminMenu">
+            <?php
+            echo $this->layout()->adminMenu;
+            ?>&nbsp;
+        </div>
+<div id="userForm">
+            <?php
+            echo $this->layout()->userForm;
+            ?>&nbsp;
+        </div>
+</div>
+<div id="main">
+            <?php
+            echo $this->layout()->content?>&nbsp;
+        </div>
+<div id="footer">
+<p><em>Powered by the Zend Framework</em></p>
+</div>
+</div>
+</body>
+<?php 
+    $this->addScriptPath(APPLICATION_PATH . '/views/scripts');
+?>
+</html>
